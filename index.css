@@ -99,7 +99,7 @@ body {
 }
 
 .container {
-  padding: 10px;
+  /* padding: 10px; */
   max-width: 550px;
   border-radius: 5px;
 }
@@ -110,6 +110,8 @@ body {
   justify-content: center;
   align-items: center;
   background: #6943ff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 h2 {
@@ -117,7 +119,7 @@ h2 {
   font-weight: 800;
   color: #fff;
   text-align: center;
-  margin-bottom: 30px;
+  margin: 20px;
   padding: 10px 15px;
 }
 
@@ -132,7 +134,7 @@ input {
   color: #fff;
   width: 117px;
   justify-self: center;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 button {
@@ -144,12 +146,14 @@ button {
   width: 117px;
   background: #fff;
   cursor: pointer;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .values-container {
   background: #f4f4f4;
-  padding: 10px;
+  padding: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 h3 {
@@ -171,4 +175,29 @@ h3 {
 
 p {
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+    margin: 15px;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .heading,
+  .values-container {
+    border-radius: 0;
+  }
+  input {
+    font-size: 2.8rem;
+    padding: 10px;
+  }
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
 }
